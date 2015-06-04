@@ -1,0 +1,21 @@
+{
+  "name": "doggerjs-frontend",
+  "version": "0.0.1",
+  "description": "A complete structure to start a frontend project using AngularJS, Bower and GulpJS.",
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hashdog/doggerjs-frontend.git"
+  },
+  "engines": {
+    "node": "0.12.x"
+  },
+  "author": "Mario Colque <mario@hashdog.io>",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

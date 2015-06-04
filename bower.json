@@ -1,0 +1,19 @@
+{
+  "name": "doggerjs-frontend",
+  "version": "0.0.1",
+  "private": false,
+  "authors": [
+    "Mario Colque <mario@hashdog.io>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
