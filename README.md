@@ -5,7 +5,6 @@
 </p>
 # DoggerJS Frontend
 
-[![Stories in Ready](https://badge.waffle.io/hashdog/doggerjs-frontend.png?label=ready&title=Ready)](https://waffle.io/hashdog/doggerjs-frontend)
 [![Build Status](http://img.shields.io/travis/hashdog/doggerjs-frontend.svg?style=flat-square)](https://travis-ci.org/hashdog/doggerjs-frontend)
 [![Dependency Status](http://img.shields.io/david/hashdog/doggerjs-frontend.svg?style=flat-square)](https://david-dm.org/hashdog/doggerjs-frontend)
 [![devDependency Status](http://img.shields.io/david/dev/hashdog/doggerjs-frontend.svg?style=flat-square)](https://david-dm.org/hashdog/doggerjs-frontend#info=devDependencies)
