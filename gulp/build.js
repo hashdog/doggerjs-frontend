@@ -93,6 +93,11 @@ gulp.task('html', ['styles', 'scripts', 'partials'], function() {
 
 gulp.task('images', function() {
   return gulp.src(srcAssets.images + '**/*')
+    .pipe($.imagemin({
+      optimizationLevel: 4,
+      progressive: true,
+      interlaced: true
+    }))
     .pipe(gulp.dest(destAssets.images))
     .pipe($.size());
 });
