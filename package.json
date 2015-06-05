@@ -26,6 +26,7 @@
     "gulp-angular-htmlify": "^2.3.0",
     "gulp-angular-templatecache": "^1.6.0",
     "gulp-autoprefixer": "^2.3.1",
+    "gulp-cache": "^0.2.10",
     "gulp-csso": "^1.0.0",
     "gulp-filter": "^2.0.2",
     "gulp-flatten": "0.0.4",

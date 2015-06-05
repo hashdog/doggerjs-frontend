@@ -30,6 +30,12 @@ var minifyHtmlOptions = {
   quotes: true
 };
 
+var imageminOptions = {
+  optimizationLevel: 4,
+  progressive: true,
+  interlaced: true
+};
+
 function handleError(err) {
   console.error(err.toString());
   this.emit('end');
@@ -93,11 +99,7 @@ gulp.task('html', ['styles', 'scripts', 'partials'], function() {
 
 gulp.task('images', function() {
   return gulp.src(srcAssets.images + '**/*')
-    .pipe($.imagemin({
-      optimizationLevel: 4,
-      progressive: true,
-      interlaced: true
-    }))
+    .pipe($.cache($.imagemin(imageminOptions)))
     .pipe(gulp.dest(destAssets.images))
     .pipe($.size());
 });
