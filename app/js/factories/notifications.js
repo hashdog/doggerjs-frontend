@@ -7,7 +7,7 @@ angular.module('doggerApp.factories')
       if (text) {
         growl.addSuccessMessage(text, { ttl: 5000 });
       }
-
+    };
 
     this.warning = function(text) {
       if (text) {
