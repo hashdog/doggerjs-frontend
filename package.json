@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A complete structure to start a frontend project using AngularJS, Bower and GulpJS.",
   "scripts": {
+    "test": "./node_modules/gulp/bin/gulp.js travis",
     "postinstall": "./node_modules/bower/bin/bower install"
   },
   "repository": {
