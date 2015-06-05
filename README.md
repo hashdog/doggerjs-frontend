@@ -47,8 +47,8 @@ You just need to clone this repo and start your development.
 
 
 ```bash
-$ git clone https://github.com/hashdog/doggerjs-frontend.git
-$ cd doggerjs-frontend && npm install
+$ git clone https://github.com/hashdog/doggerjs-frontend.git <my-app>
+$ cd <my-app> && npm install
 ```
 
 ### Running
@@ -68,3 +68,11 @@ Then, open a browser and go to:
 ```bash
 http://localhost:8080
 ```
+
+### Testing
+If you need to test your javascript code, just run:
+```bash
+$ gulp test
+```
+
+This task, will check all *.js* files and will notificate you about warnings and errors.
