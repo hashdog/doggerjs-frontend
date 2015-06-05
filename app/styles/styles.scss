@@ -1,0 +1,34 @@
+// Import files
+@import 'home';
+@import 'variables';
+
+body {
+  background-color: $body-bg;
+  color: $font-color;
+  font: 400 14px/1.8 $font-family-base;
+}
+
+// AngularJS Styles Helpers
+[ng-click],
+[data-ng-click] {
+  cursor: pointer;
+}
+
+// General
+* { outline: none; }
+
+#content-wrapper {
+  margin-top: 80px;
+}
+
+// Growl
+.growl {
+  z-index: 99999;
+
+  .growl-item {
+    &.ng-enter,
+    &.ng-leave {
+      transition: .4s ease-in-out all;
+    }
+  }
+}
