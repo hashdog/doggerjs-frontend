@@ -32,8 +32,8 @@ angular.module('doggerApp')
         templateUrl: 'views/home.html',
         controller: 'HomeCtrl'
       })
-      .when('/404', {
-        templateUrl: 'views/404.html'
+      .when('/about', {
+        templateUrl: 'views/about.html'
       })
       .otherwise({ redirectTo: '/' });
 
