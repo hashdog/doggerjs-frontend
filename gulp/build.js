@@ -2,7 +2,7 @@
 
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')({
-    pattern: ['gulp-*', 'main-bower-files', 'del']
+    pattern: ['gulp-*', 'main-bower-files']
   });
 
 var basePath = {
@@ -106,7 +106,8 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('clean', function() {
-  $.del(['.tmp', 'public']);
+  return gulp.src(['.tmp', 'public'], { read: false })
+    .pipe($.clean());
 });
 
 gulp.task('build', ['html', 'fonts', 'images']);
