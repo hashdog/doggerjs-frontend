@@ -99,7 +99,7 @@ gulp.task('html', ['styles', 'scripts', 'partials'], function() {
 
 gulp.task('images', function() {
   return gulp.src(srcAssets.images + '**/*')
-    .pipe($.cache($.imagemin(imageminOptions)))
+    .pipe($.imagemin(imageminOptions))
     .pipe(gulp.dest(destAssets.images))
     .pipe($.size());
 });
