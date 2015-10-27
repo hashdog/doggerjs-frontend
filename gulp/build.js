@@ -62,11 +62,11 @@ gulp.task('scripts', function() {
 gulp.task('partials', function() {
   return gulp.src('app/views/**/*.html')
     .pipe($.minifyHtml(minifyHtmlOptions))
+    .pipe($.angularHtmlify())
     .pipe($.angularTemplatecache({
       root: 'views',
       standalone: true
     }))
-    .pipe($.angularHtmlify())
     .pipe(gulp.dest('.tmp'))
     .pipe($.size());
 });
